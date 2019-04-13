@@ -59,16 +59,17 @@ end
 
 #returns the winner
 def winner (board)
-  winrow = won?(board)
-  posit = [" ", " ", " "]
-  counter = 0
-  winrow.each do |windex|
-    posit[counter] = board[windex]
-    counter += 1
-  end
-  if posit.all? {|var| var == "X"}
-    return "X"
-  elsif posit.all? {|var| var == "O"}
-    return "O"
-  end
+  if won?(board)
+    winrow = won?(board)
+    posit = [" ", " ", " "]
+    counter = 0
+    winrow.each do |windex|
+      posit[counter] = board[windex]
+      counter += 1
+    end
+    if posit.all? {|var| var == "X"}
+      return "X"
+    elsif posit.all? {|var| var == "O"}
+      return "O"
+    end
 end
