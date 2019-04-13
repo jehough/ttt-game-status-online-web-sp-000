@@ -66,4 +66,8 @@ def winner (board)
     posit[counter] = board[windex]
     counter += 1
   end
-  if posit.
+  if posit.all? {|var| var == "X"}
+    return "X"
+  elsif posit.all? {|var| var == "O"}
+    return "O"
+  end
