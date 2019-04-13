@@ -50,6 +50,7 @@ end
 
 #test if game is over
 def over? (board)
-  draw? (board) || won? (board)
+  if draw? (board)
+  elsif won? (board)
 end
      
