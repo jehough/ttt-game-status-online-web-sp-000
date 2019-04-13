@@ -54,6 +54,6 @@ def over? (board)
     return true
   elsif won? (board)
     return true
-end
+  end
 end
      
