@@ -61,4 +61,4 @@ end
 def winner (board)
   winrow = won?(board)
   posit = [" ", " ", " "]
-  counter =
+  counter = 0
