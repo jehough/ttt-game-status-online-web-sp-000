@@ -56,4 +56,8 @@ def over? (board)
     return true
   end
 end
-     
+
+#returns the winner
+def winner (board)
+  winrow = won?(board)
+  
