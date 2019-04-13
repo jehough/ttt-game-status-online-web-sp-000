@@ -51,7 +51,9 @@ end
 #test if game is over
 def over? (board)
   if draw? (board)
+    return true
   elsif won? (board)
+    return true
 end
 end
      
