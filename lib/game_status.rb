@@ -50,12 +50,7 @@ end
 
 #test if game is over
 def over? (board)
-  if draw? (board) == true
-    return true
-  elsif won? (board) == true
-    return true
-  else
-    return false
-  end
+  draw? (board)
+  won? (board)
 end
      
