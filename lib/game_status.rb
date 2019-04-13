@@ -62,3 +62,8 @@ def winner (board)
   winrow = won?(board)
   posit = [" ", " ", " "]
   counter = 0
+  winrow.each do |windex|
+    posit[counter] = board[windex]
+    counter += 1
+  end
+  if posit.
