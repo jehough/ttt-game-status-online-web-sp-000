@@ -72,4 +72,5 @@ def winner (board)
     elsif posit.all? {|var| var == "O"}
       return "O"
     end
+  end
 end
