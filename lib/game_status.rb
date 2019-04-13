@@ -44,11 +44,7 @@ end
 #test if there is a draw
 def draw? (board)
   if full?(board) == true
-    if won?(board) == false
-      return true
-    end
-  else
-    return false
+    won?(board)
   end
 end
 
